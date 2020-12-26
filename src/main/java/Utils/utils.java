@@ -9,6 +9,7 @@ public class utils {
         String details =
                  "name :"  + name + ",\n"
                 + "job :" + job + "\n"
+
                 ;
         return details;
 
