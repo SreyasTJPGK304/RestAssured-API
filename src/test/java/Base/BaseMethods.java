@@ -31,12 +31,7 @@ public class BaseMethods  {
         logger.log(Status.PASS,"browser launched");
         extent.flush();
 
-    }
-        @Test
-    public static void postMethod() {
-        ExtentHtmlReporter reporter=new ExtentHtmlReporter("./ExtentReports/demo.html");
-        ExtentReports extent=new ExtentReports();
-        extent.attachReporter(reporter);
+
         ExtentTest logger2 = extent.createTest("POST Method");
 
         given().baseUri(utils.URL()).log().all()
@@ -46,14 +41,7 @@ public class BaseMethods  {
         logger2.log(Status.PASS,"Post Method Test Execution");
         extent.flush();
 
-    }
 
-    @Test
-
-    public static void postMethod1() {
-        ExtentHtmlReporter reporter=new ExtentHtmlReporter("./ExtentReports/demo.html");
-        ExtentReports extent=new ExtentReports();
-        extent.attachReporter(reporter);
 
         ExtentTest logger3 = extent.createTest("Post Method1");
         given().baseUri(utils.URL()).log().all()

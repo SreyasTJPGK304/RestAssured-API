@@ -11,16 +11,7 @@ public class request  {
 
         BaseMethods.getMethod();
     }
-    @Test
-    public void postAPItest(){
 
-        BaseMethods.postMethod();
-    }
-    @Test
-    public void postAPItest1(){
-        BaseMethods.postMethod1();
-
-    }
 
 }
 
